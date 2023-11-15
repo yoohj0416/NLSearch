@@ -65,7 +65,7 @@ def main():
     # Calculating cosine similarity
     image_features = embeddings[ModalityType.VISION]
 
-    pinecone.init(api_key="4b147870-3431-42ea-999e-8e6747f5889a", environment="gcp-starter")
+    pinecone.init(api_key="YOUR_API_KEY", environment="YOUR_ENVIRONMENT")
     pinecone.create_index('imagesearch-demo', dimension=1024, metric='cosine')
 
     index = pinecone.Index('imagesearch-demo')
